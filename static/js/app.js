@@ -89,6 +89,15 @@ function DrawBubbleChart(sampleId)
 function ShowMetadata(sampleId)
 {
     console.log(`Show MetaData(${sampleId})`);
+
+    d3.json(url).then(data => {
+
+        let metadata = data.metadata;
+        let resultArray = metadata.filter(s => s.id == sampleId);
+        let result = resultArray[0]; 
+        //Complete...
+    });
+
 }
 
 

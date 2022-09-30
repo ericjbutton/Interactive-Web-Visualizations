@@ -95,7 +95,7 @@ function ShowMetadata(sampleId)
         let metadata = data.metadata;
         let resultArray = metadata.filter(s => s.id == sampleId);
         let result = resultArray[0]; 
-        //Complete...
+        //Couldn't get into Demographic info in index.html
     });
 
 }
